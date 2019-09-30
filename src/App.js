@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
+//import Header from './components/Header';
 import Content from './components/Content';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
+import Read from './components/Read';
+import Create from './components/Create';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav} from 'react-bootstrap';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
-import Containts from './components/Content';
+//import Containts from './components/Content';
 
 
 class  App extends React.Component {
@@ -24,8 +26,8 @@ class  App extends React.Component {
           
     <Switch>
       <Route exact path="/" component={Content}/>
-      <Route path="/read" component={Header}/>
-      <Route path="/create" component={Footer}/>
+      <Route path="/read" component={Read}/>
+      <Route path="/create" component={Create}/>
     </Switch>
 
     {/*
